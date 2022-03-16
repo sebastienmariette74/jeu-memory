@@ -43,10 +43,10 @@ $(function(){
   let hippo = "<img class='animal' src='images/hippo.png' alt=''>";
   let penguin = "<img class='animal' src='images/penguin.png' alt=''>";
   let shark = "<img class='animal' src='images/shark.png' alt=''>";
-  let monkey = "<img class='animal' src='images/monkey.jpg' alt=''>";
+  let snake = "<img class='animal' src='images/snake.png' alt=''>";
   let tortle = "<img class='animal' src='images/tortle.png' alt=''>";
 
-  let animals = [cow, elephent, herisson, hippo, penguin, shark, monkey, tortle, cow, elephent, herisson, hippo, penguin, shark, monkey, tortle];
+  let animals = [cow, elephent, herisson, hippo, penguin, shark, snake, tortle, cow, elephent, herisson, hippo, penguin, shark, snake, tortle];
   /* ______________________________________________________________________ */
 
   /* ----------- TABLEAU DES CASES ----------------*/
@@ -183,7 +183,7 @@ $(function(){
 
   restart.click(()=>{
     /* -------------- REINITITIALISATION DE LA GRILLE ----------------------------*/
-    let animals = [cow, elephent, herisson, hippo, penguin, shark, monkey, tortle, cow, elephent, herisson, hippo, penguin, shark, monkey, tortle];
+    let animals = [cow, elephent, herisson, hippo, penguin, shark, snake, tortle, cow, elephent, herisson, hippo, penguin, shark, snake, tortle];
     let table1 = $('.box');
     let boxes = [...table1];
 
