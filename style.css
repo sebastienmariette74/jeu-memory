@@ -3,8 +3,15 @@
 }
 
 body {
-  background: linear-gradient(rgb(255, 192, 203) , #d2691e);
-  z-index: -1;
+  /* background: linear-gradient(rgb(255, 192, 203) , #d2691e); */
+  /* z-index: -1; */
+}
+
+.title {
+  display: block;
+  margin: 0 auto;
+  width: 35vw;
+
 }
 
 body:before {
@@ -43,7 +50,7 @@ h1 {
   -o-border-radius: 20px;
 }
 
-img {
+.animal {
   width: 145px;
   position: absolute;
   top: 50%;

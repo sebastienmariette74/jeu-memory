@@ -37,14 +37,14 @@ $(function(){
 
 
   /* ------------------- tableau des figurines ---------------------------- */
-  let cow = "<img class='animal' src='/images/cow.png' alt=''>";
-  let elephent = "<img class='animal' src='/images/elephent.png' alt=''>";
-  let herisson = "<img class='animal' src='/images/herisson.png' alt=''>";
-  let hippo = "<img class='animal' src='/images/hippo.png' alt=''>";
-  let penguin = "<img class='animal' src='/images/penguin.png' alt=''>";
-  let shark = "<img class='animal' src='/images/shark.png' alt=''>";
-  let monkey = "<img class='animal' src='/images/monkey.jpg' alt=''>";
-  let tortle = "<img class='animal' src='/images/tortle.png' alt=''>";
+  let cow = "<img class='animal' src='images/cow.png' alt=''>";
+  let elephent = "<img class='animal' src='images/elephent.png' alt=''>";
+  let herisson = "<img class='animal' src='images/herisson.png' alt=''>";
+  let hippo = "<img class='animal' src='images/hippo.png' alt=''>";
+  let penguin = "<img class='animal' src='images/penguin.png' alt=''>";
+  let shark = "<img class='animal' src='images/shark.png' alt=''>";
+  let monkey = "<img class='animal' src='images/monkey.jpg' alt=''>";
+  let tortle = "<img class='animal' src='images/tortle.png' alt=''>";
 
   let animals = [cow, elephent, herisson, hippo, penguin, shark, monkey, tortle, cow, elephent, herisson, hippo, penguin, shark, monkey, tortle];
   /* ______________________________________________________________________ */
