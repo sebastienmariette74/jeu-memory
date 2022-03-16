@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Memory Game</title>
+</head>
+<body>
+  <h1>Memory Game</h1>
+  <div class="button">
+    <button id="button_start" class="button_start">START</button>
+  </div>
+  <div class="grid"></div>
+  <div class="ghost_grid"></div>
+  <div class="modal">
+    <div class="modal_content">
+      <p class="modal_text">Bravo ! Tu as terminé à temps !!!</p>
+      <button class="button_restart">REJOUER</button>
+    </div>
+  </div>
+  <div>
+    <progress id="MaBarreProgression" value="0" max="12000"></progress>
+    <span class="progress-value">Téléchargement 0%</span>
+
+  </div>
+  <div id="mainObj" class="inputDiv"> 
+    <div id="pbar0" style="height: 20px;"></div> 
+    <div id="pbar1" style="height: 20px;"></div> 
+    <div id="pbar2" style="height: 20px;"></div> 
+    <div id="pbar3" style="height: 20px;"></div> 
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- <script src="jquery-ui.min.js"></script> -->
+  <script src="script.js"></script>
+
+</body>
+</html>
