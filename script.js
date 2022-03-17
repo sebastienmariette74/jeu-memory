@@ -3,13 +3,27 @@
 $(function(){
   $('.modal').css('display','none');
   let start = $('.button_start');
+  console.log(start);
   let restart = $('.button_restart');
   start.css('cursor', 'pointer');
   restart.css('cursor', 'pointer');
   let progressBar = $('#MaBarreProgression');
   progressBar.css('display', 'none');
   // progressBar.progressbar("disabled");
-  
+
+  /* ------------------ le bouton start clignote ------------------- */
+  let bindStart;
+
+  let bind = ()=>{
+    if(start.css('font-size') === '16px'){
+      start.css('font-size', '18px');
+    } else {
+      start.css('font-size', '16px');
+    };
+  };
+
+  bindStart = setInterval(bind, 500); 
+  /* ________________________________________________________________*/
 
 
   /* ----------------- création de la grille ---------------- */
@@ -58,8 +72,9 @@ $(function(){
 
     /* ---------- disposition des figurines dans le tableau ----------------- */  
     for (let box of boxes) {
-      box.style.backgroundColor = '#fffaba';
-      box.style.borderColor = '#fffaba';
+      // box.style.backgroundColor = '#fffaba';
+      box.style.backgroundColor = '#ffffff';
+      box.style.borderColor = '#ffffff';
       let numberOfRemainingBoxes = animals.length; 
       let randomNumber = function() { 
         return Math.floor(Math.random() * (numberOfRemainingBoxes-1));
@@ -75,6 +90,7 @@ $(function(){
         }
       }       
       animals.splice(nb, 1);
+      clearInterval(bindStart);
     }; 
     /* _____________________________________________________________________ */
 

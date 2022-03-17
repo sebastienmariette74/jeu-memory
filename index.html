@@ -14,19 +14,26 @@
   </header>
   <section>
     <div class="button">
-      <button id="button_start" class="button_start">START</button>
+      <button id="button_start" class="button_start">
+        <span class="mark--s">S</span>
+        <span class="mark--t">T</span>
+        <span class="mark--a">A</span>
+        <span class="mark--r">R</span>
+        <span class="mark--t">T</span>
+      </button>
     </div>
-    <div class="grid"></div>
-    <div class="ghost_grid"></div>
+    <div class="grid">
+      <div class="under_grid"></div>
+    </div>
     <div class="modal">
       <div class="modal_content">
-        <p class="modal_text">Bravo ! Tu as terminé à temps !!!</p>
+        <p class="modal_text">Bravo ! <br> Tu as terminé à temps !!!</p>
         <button class="button_restart">REJOUER</button>
       </div>
     </div>
     <div>
       <progress id="MaBarreProgression" value="0" max="12000"></progress>
-      <span class="progress-value">Téléchargement 0%</span>
+      <!-- <span class="progress-value">Téléchargement 0%</span> -->
   
     </div>
     <div id="mainObj" class="inputDiv"> 
