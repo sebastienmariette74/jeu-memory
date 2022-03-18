@@ -4,18 +4,14 @@
   padding: 0;
 }
 
-body {
-  /* background: linear-gradient(rgb(255, 192, 203) , #d2691e); */
-  /* z-index: -1; */
+section {
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -1;
 }
 
-/* header {
-  background: white;
-} */
 
 .title {
-  /*margin-top: 50px;
-  */display: block;
+  display: block;
   margin: 20px auto;
   width: 50vw;
 }
@@ -48,7 +44,6 @@ body:before {
 .grid {
   margin-top: 50px;  
   position: relative;
-
 }
 
 .under_grid{
@@ -108,22 +103,26 @@ body:before {
   background-color: rgba(0,0,0,0.4); 
 }
 
-.modal_content {
+.modal_content, .modal_content1 {
   position: absolute;
   margin: auto;
-  /* display: flex;
-  flex-direction: column; */
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
   width: 50vw;
-  height: 10vh;
+  height: 15vh;
   background-color: #ffffff;
   color: black;
   padding: 10px;
   border-radius: 10px;
   box-shadow: 0 5px 13px 4px grey;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 
 .modal_text {
@@ -132,6 +131,31 @@ body:before {
   color: rgb(43, 168, 226);
 }
 
+legend{
+  margin-bottom: 20px;
+}
+
+.input_oui{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 10px;
+}
+
+.radio{
+  height: 30px;
+}
+
+.response {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+}
+
+/* .selected {
+  margin-right: 20px;
+} */
+
+
 .button {
   text-align: center;
   height: 50px;
@@ -139,7 +163,7 @@ body:before {
 
 }
 
-.button_start, .button_restart{
+.button_start, .submit, .restart{
   color: white;
   padding: 5px 10px;
   border-radius: 50px;
@@ -160,14 +184,14 @@ body:before {
   font-size: 20px;
 }
 
-.button_restart{
+.submit, .restart{
   background: rgb(48, 140, 245);
   display: block;
   margin: 0 auto;
 }
 
 progress{
-  width: 660px;
+  width: 390px;
   height: 50px;
   display: block;
   margin: 0 auto;
@@ -271,7 +295,7 @@ progress{
   
   }
   
-  .button_start, .button_restart{
+  .button_start, .submit{
     background: rgb(48, 140, 245);
     color: white;
     padding: 5px 10px;
@@ -288,7 +312,7 @@ progress{
     font-size: 20px;
   }
   
-  .button_restart{
+  .submit{
     display: block;
     margin: 0 auto;
   }

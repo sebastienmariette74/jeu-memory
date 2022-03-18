@@ -25,22 +25,50 @@
     <div class="grid">
       <div class="under_grid"></div>
     </div>
+    <!-- <div class="modal">
+      <div class="modal_content">
+        <p class="modal_text"></p>
+        <button class="submit">REJOUER</button>
+      </div>
+    </div> -->
     <div class="modal">
       <div class="modal_content">
-        <p class="modal_text">Bravo ! <br> Tu as terminé à temps !!!</p>
-        <button class="button_restart">REJOUER</button>
+        <fieldset>
+          <legend>Veux-tu un chronomètre ?</legend>
+          <div class="input_oui">
+            <div class="radio">
+              <input type="radio" name="chrono" id="oui" value="oui">
+              <label for="yes" class="response">oui</label>
+            </div>
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Quel temps ?</option>
+              <option value="1">30s</option>
+              <option value="2">60s</option>
+              <option value="3">90s</option>
+              <option value="4">120s</option>
+            </select>
+          </div>
+          <div class="radio">
+            <input type="radio" name="chrono" id="non" value="non" checked>
+            <label for="non" class="response">non</label>
+          </div>
+        </fieldset>
+        
+        
+        <button class="submit">OK</button>
+      </div>
+    </div>
+    <div class="modal1">
+      <div class="modal_content1">        
+        <div class="modal_text"></div>
+        <button class="restart">RESTART</button>
+
+        
       </div>
     </div>
     <div>
-      <progress id="MaBarreProgression" value="0" max="12000"></progress>
-      <!-- <span class="progress-value">Téléchargement 0%</span> -->
-  
-    </div>
-    <div id="mainObj" class="inputDiv"> 
-      <div id="pbar0" style="height: 20px;"></div> 
-      <div id="pbar1" style="height: 20px;"></div> 
-      <div id="pbar2" style="height: 20px;"></div> 
-      <div id="pbar3" style="height: 20px;"></div> 
+      <progress id="MaBarreProgression" value="0" max=""></progress>
+      <!-- <span class="progress-value">Téléchargement 0%</span> -->  
     </div>
   </section>
 
