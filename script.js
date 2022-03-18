@@ -72,6 +72,41 @@ $(function(){
   let table1 = $('.box');
   let boxes = [...table1];
 
+  /* -------------- INITITIALISATION DE LA GRILLE ----------------------------*/
+  
+
+  let home = ()=>{
+    animals = [cow, elephent, herisson, hippo, penguin, shark, snake, tortle, cow, elephent, herisson, hippo, penguin, shark, snake, tortle];
+    for (let box of boxes) {
+      let numberOfRemainingBoxes = animals.length; 
+      let randomNumber = function() { 
+        return Math.floor(Math.random() * (numberOfRemainingBoxes));
+      };        
+      let nb = randomNumber();
+      box.innerHTML = animals[nb];
+      console.log(box.innerHTML);
+  
+      // if (box.hasChildNodes()) {
+      //   let children = box.childNodes;
+      
+      //   for (let child of children) {
+      //     child.style.opacity = '1';
+      //   }
+      // }       
+      animals.splice(nb, 1);
+    };     
+  };
+
+  let homeDisplay = setInterval(()=> {
+    home();
+  }, 300);
+
+
+  /* ___________________________________________________________________________*/
+
+
+
+
 
   /* --------------------- BARRE DE PROGRESSION ------------------------------- */   
   
@@ -113,6 +148,7 @@ $(function(){
     $('section').css('backgroundColor','rgba(0, 0, 0, 0)');
     $('.modal').css('display','block');
     clearInterval(bindStart);
+    clearInterval(homeDisplay);
     start.prop('disabled', true);
   })  
   /* ________________________________________________________________________ */
