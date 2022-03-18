@@ -5,15 +5,17 @@
 }
 
 section {
-  background: rgba(0, 0, 0, 0.4);
-  z-index: -1;
+  /* background: rgba(0, 0, 0, 0.4);
+  z-index: -1; */
 }
 
+body {
+  font-family: 'Roboto', sans-serif;}
 
 .title {
   display: block;
-  margin: 20px auto;
-  width: 50vw;
+  margin: 30px auto;
+  width: 75vw;
 }
 
 body:before {
@@ -112,8 +114,8 @@ body:before {
   top: 25%;
   left: 50%;
   transform: translateX(-50%);
-  width: 50vw;
-  height: 15vh;
+  width: 60vw;
+  height: 30vh;
   background-color: #ffffff;
   color: black;
   padding: 10px;
@@ -126,6 +128,8 @@ body:before {
 }
 
 .modal_text {
+  margin-top: 50px;
+  font-size: 24px;
   text-align: center;
   text-transform: uppercase;
   color: rgb(43, 168, 226);
@@ -138,7 +142,10 @@ legend{
 .input_oui{
   display: flex;
   justify-content: space-between;
-  margin-right: 10px;
+  margin: 0 10px;
+}
+.input_non{
+  margin: 0 10px;
 }
 
 .radio{
@@ -160,6 +167,7 @@ legend{
   text-align: center;
   height: 50px;
   line-height: 50px;
+  margin-bottom: 100px;
 
 }
 
@@ -191,7 +199,7 @@ legend{
 }
 
 progress{
-  width: 390px;
+  width: 360px;
   height: 50px;
   display: block;
   margin: 0 auto;
