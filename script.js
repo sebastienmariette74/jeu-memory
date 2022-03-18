@@ -240,7 +240,7 @@ $(function(){
     radio = $('input[name=chrono]:checked').val();
     if (radio === 'oui'){
       if (time === '30s'){
-        let sec = 500;
+        let sec = 3000;
         progressBar.css('display', 'block');
         $('.modal1').css('display', 'none');
         chrono(sec);
