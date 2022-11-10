@@ -1,7 +1,7 @@
 # Projet Jeu Memory - [site](https://sebastienmariette74.github.io/jeu-memory/)
 Projet réalisé au début de ma formation de Développeur Web et Web Mobile chez STUDI.
 ## Technologies
-HTML, CSS, Bootstrap, jQuery
+HTML, CSS, Bootstrap, JQuery
 
 ## Détails du projet
 
